@@ -1,0 +1,19 @@
+
+*** Settings ***
+Library    SeleniumLibrary
+*** Test Cases ***
+
+TestRobot
+   Open Browser  https://www.velocityfleet.com/accounts/login/?    Chrome
+   Click Element    id=CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll
+   Sleep    5
+   Input Text    name=username    aymen.h@harrathi.com
+   Input Text    name=password    @Harrathi2022
+   Click Element    xpath=//*[@id="login-panel__form"]/button
+   Sleep    5
+   Click Element    xpath=/html/body/div/div[1]/section/div/ul/li[1]/a
+   Click Element    xpath=//*[@id="root"]/div/div[2]/div/div/div[1]/div/div/i
+   #Click Element    xpath=/html/body/div/div[1]/section/div/ul/li[1]/a
+   #Click Element    xpath=//*[@id="invoices_link"]     
+   Sleep    3
+   Click Element    xpath=//*[@id="root"]/div/section/div/ul/li[1]/a/div[2]/h3  

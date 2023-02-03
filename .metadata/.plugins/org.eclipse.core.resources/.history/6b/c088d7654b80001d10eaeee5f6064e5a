@@ -1,0 +1,75 @@
+***Settings***
+Library    SeleniumLibrary
+Library    BuiltIn
+Library    Collections
+*** Variables ***
+*** Variables ***
+${Browser}  Chrome
+${URL}  https://www.velocityfleet.com/accounts/login/
+${Username Locator}  id:login-panel__email
+${Username}  aymen.h@harrathi.com
+${Password Locator}  id:login-panel__password
+${Password}  @Harrathi2022
+${Login Button Locator}  xpath://*[@id="login-panel__form"]/button
+
+*** Keywords ***
+Open Browser Vilocity
+    [Arguments]    ${APPURL}    ${APPBrowser}
+    Open Browser    ${APPURL}    ${APPBrowser}
+    Maximize Browser Window
+    Sleep    2
+    Click Element    id=CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll
+    ${title}=    get title
+    [Return]    ${title}
+Login Portal
+    Input text    ${Username Locator}    ${Username}
+    Sleep    3
+    Input Text    ${Password Locator}    ${Password} 
+    Sleep    3
+    Click Element   ${Login Button Locator}   
+    Sleep    10
+    ${title}=    get time
+    [Return]    ${title}
+
+InspectPage
+    open context menu    xpath://*[@class="tile tile_ tile--has-extra-info tile--no-icon-hover"]
+    sleep    5
+    Close Browser
+    
+ScrollingPage
+    Open Browser    https://www.countries-ofthe-world.com/flags-of-the-world.html    Chrome
+    Maximize Browser Window
+    Sleep    3
+    #Click Element    xpath://*[@class="cc-btn cc-dismiss"]
+    #Sleep    3
+    #execute javascript    window.scrollTo(0,4500)
+    #scroll element into view    xpath://*[contains(text(),'Tunisia')]
+    execute javascript    window.scrollTo(0,document.body.scrollHeight)     #end of the page
+    Sleep    5
+    execute javascript    window.scrollTo(0,-document.body.scrollHeight)    #start of the page
+    sleep    5
+    Close Browser    
+    
+List Invoice
+    Click Element    xpath://li[1][@class='tile tile_ tile--has-extra-info tile--no-icon-hover']
+    wait until element is visible    xpath://li[4][@class='tile_2022 tile--fuel-cards']
+    Click Element    xpath://li[4][@class='tile_2022 tile--fuel-cards']
+    Sleep    3
+    #Click Element    xpath://div[@id="date"]//div[@class=" css-1dimb5e-singleValue"]
+    Select From List By Index    xpath://div[@id="date"]//div[@class=" css-1dimb5e-singleValue"]    3
+    #@{locators}=    Get Webelements    xpath://td/h3[@class='tableCardHeading' and text()='Numéro de facture']
+    @{locators}=    Get Webelements    xpath://td[4][@role='cell']
+    #@{locators}=    Get Webelements    xpath://*[@class='tableCardHeading' and text()="Numéro de facture"]//ancestor::td
+    
+    set selenium speed    0
+    ${result}=    Create List
+    FOR    ${locator}    IN    @{locators}
+           ${number}=    Get Text    ${locator}
+           Append To List    ${result}    ${number}        
+    END
+    [return]    ${result} 
+    log to console    ${result}
+    Sleep    10
+    Close Browser
+    
+    

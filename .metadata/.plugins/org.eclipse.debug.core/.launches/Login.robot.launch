@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.robotframework.ide.robotLaunchConfiguration">
+    <stringAttribute key="Agent connection host" value="127.0.0.1"/>
+    <stringAttribute key="Agent connection port" value="43981"/>
+    <stringAttribute key="Agent connection timeout" value="30"/>
+    <booleanAttribute key="Exclude option enabled" value="false"/>
+    <listAttribute key="Excluded tags"/>
+    <stringAttribute key="Executable file arguments" value=""/>
+    <stringAttribute key="Executable file path" value=""/>
+    <booleanAttribute key="General purpose option enabled" value="true"/>
+    <booleanAttribute key="Include option enabled" value="false"/>
+    <listAttribute key="Included tags"/>
+    <stringAttribute key="Interpreter arguments" value=""/>
+    <stringAttribute key="Interpreter name" value="Python"/>
+    <booleanAttribute key="Project interpreter" value="true"/>
+    <stringAttribute key="Project name" value="Automation"/>
+    <stringAttribute key="Remote agent" value="false"/>
+    <stringAttribute key="Robot arguments" value=""/>
+    <mapAttribute key="Test suites">
+        <mapEntry key="Test/Login.robot" value=""/>
+        <mapEntry key="TestCases/DBTesting.robot" value=""/>
+        <mapEntry key="TestCases/DDT.robot" value=""/>
+        <mapEntry key="TestCases/DDT_Excel.robot" value=""/>
+        <mapEntry key="TestCases/DDT_Invalid.robot" value=""/>
+        <mapEntry key="TestCases/DTT_Valid.robot" value=""/>
+        <mapEntry key="TestCases/ForLoop.robot" value=""/>
+        <mapEntry key="TestCases/ListInvoice.robot" value=""/>
+        <mapEntry key="TestCases/ScrollingPage.robot" value=""/>
+    </mapAttribute>
+    <setAttribute key="Test suites unselected">
+        <setEntry value="Test/Login.robot"/>
+        <setEntry value="TestCases/DBTesting.robot"/>
+        <setEntry value="TestCases/DDT.robot"/>
+        <setEntry value="TestCases/DDT_Invalid.robot"/>
+        <setEntry value="TestCases/DTT_Valid.robot"/>
+        <setEntry value="TestCases/ForLoop.robot"/>
+        <setEntry value="TestCases/ListInvoice.robot"/>
+        <setEntry value="TestCases/ScrollingPage.robot"/>
+    </setAttribute>
+    <stringAttribute key="Version of configuration" value="1"/>
+    <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
+    <mapAttribute key="org.eclipse.debug.core.environmentVariables">
+        <mapEntry key="PYTHONIOENCODING" value="utf8"/>
+    </mapAttribute>
+    <stringAttribute key="process_factory_id" value="org.robotframework.ide.launch.process.factory"/>
+</launchConfiguration>

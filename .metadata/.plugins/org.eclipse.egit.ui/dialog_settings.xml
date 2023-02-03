@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="ResetTargetSelectionDialog.resetType" value="MIXED"/>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/hassenharrathi/Automation.git"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="hassenharrathi &lt;hassenharrathi@yahoo.fr&gt;"/>
+		<item value="hassen &lt;hassen@hassen-HP.lan&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="hassenharrathi &lt;hassenharrathi@yahoo.fr&gt;"/>
+		<item value="hassen &lt;hassen@hassen-HP.lan&gt;"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="true"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\hassen\git\Automation\Automation\.git">
+			<item value="false"/>
+			<item value="hassen &lt;hassen@hassen-HP.lan&gt;"/>
+			<item value="my first commit"/>
+			<item value="hassen &lt;hassen@hassen-HP.lan&gt;"/>
+			<item value="0000000000000000000000000000000000000000"/>
+			<item value="0"/>
+			<item value="false"/>
+			<item value=""/>
+		</list>
+		<list key="C:\Users\hassen\git\Automation\.git">
+			<item value="false"/>
+			<item value="hassenharrathi &lt;118659746+hassenharrathi@users.noreply.github.com&gt;"/>
+			<item value="my first commit&#x0D;&#x0A;"/>
+			<item value="hassenharrathi &lt;118659746+hassenharrathi@users.noreply.github.com&gt;"/>
+			<item value="3d25fc6530be03d538098c214834476ab21cffa9"/>
+			<item value="0"/>
+			<item value="false"/>
+			<item value=""/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.dialogs.ResetTargetSelectionDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="619"/>
+		<item key="DIALOG_Y_ORIGIN" value="9"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="849"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

@@ -1,0 +1,43 @@
+*** Settings ***
+Library    SeleniumLibrary
+
+*** Variables ***
+${URL}    https://www.velocityfleet.com/accounts/login/
+${Browser}  ff
+
+*** Keywords ***
+Open The Browser
+    open browser    ${URL}    ${Browser}
+    maximize browser window
+    Click Element    id=CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll
+    
+Close All Browser
+    close all browsers
+    
+Open Login Page
+    go to    ${URL}
+    
+Input Username
+    [Arguments]    ${username}
+    input text    id:login-panel__email    ${username}
+    
+Input Pwd
+    [Arguments]    ${password}
+    input text    id:login-panel__password    ${password}
+    
+Click Login Button 
+    click element    xpath://*[@id="login-panel__form"]/button
+    
+Click Logout Link
+    click link    id:logout-button
+    
+Error Message should be visible
+    page should contain    Please enter a correct email and password
+    
+Dashboard page should be visible
+    page should contain    Logout
+    
+
+    
+    
+    

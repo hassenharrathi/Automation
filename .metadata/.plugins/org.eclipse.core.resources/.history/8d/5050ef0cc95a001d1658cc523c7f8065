@@ -1,0 +1,9 @@
+
+*** Settings ***
+Library    SeleniumLibrary
+*** Test Cases ***
+
+TestRobot
+   Open Browser  https://www.velocityfleet.com/accounts/login/?    Chrome
+   Input Text    name=username    *****
+   Input Text    name=log in    *****       
